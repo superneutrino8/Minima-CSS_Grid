@@ -1,10 +1,10 @@
 # MINIMA - CSS Grid Showcase
 
-![Minima](https://raw.githubusercontent.com/superneutrino8/FyloPage/master/images/Flyo-Git.png)
+![Minima]()
 
 ## Introduction
 
-[Click Here For Preview]()
+[Click Here For Preview](https://superneutrino8.github.io/FyloPage/)
 
 ## Tools used
 
