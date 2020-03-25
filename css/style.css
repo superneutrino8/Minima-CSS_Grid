@@ -19,7 +19,7 @@ body {
 /* Nav */
 
 .header {
-    background-color: #aaa;
+    /* background-color: #aaa; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,9 +28,14 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.header .logo {
+    z-index: 2;
+}
+
 .header .logo img {
-    width: 200px;
-    margin-top: 20px;
+    width: 210px;
+    margin-top: 40px;
+    /* z-index: 2; adding z-index here doesn't work as .logo class is parent class of this wrapper so adding here doesn't make any changes */
 }
 
 .header .main-nav a {
@@ -47,8 +52,46 @@ body {
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(260px, auto);
+    margin-bottom: 2rem;
 }
 
 .grid-item {
+    width: 100%;
     background-color: #ddd;
+    overflow: hidden;
+}
+
+.grid-item img {
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    /* Tried a lot other methods but didn't work, only this seems to work */
+}
+
+.grid-item__two,
+.grid-item__four,
+.grid-item__eight,
+.grid-item__nine,
+.grid-item__twelve {
+    grid-row: span 2;
+}
+
+.grid-item__two,
+.grid-item__nine,
+.grid-item__twelve {
+    grid-column: span 2;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer h4 {
+    font-weight: 200;
 }
