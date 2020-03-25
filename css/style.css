@@ -16,6 +16,8 @@ body {
     margin: 0 auto;
 }
 
+/* Nav */
+
 .header {
     background-color: #aaa;
     display: flex;
@@ -23,6 +25,7 @@ body {
     align-items: center;
     height: 80px;
     width: 100%;
+    margin-bottom: 0.5rem;
 }
 
 .header .logo img {
@@ -34,4 +37,18 @@ body {
     color: #222;
     text-decoration: none;
     margin: 0 3rem;
+}
+
+/* GRID */
+
+.grid {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(260px, auto);
+}
+
+.grid-item {
+    background-color: #ddd;
 }
