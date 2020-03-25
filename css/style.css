@@ -9,5 +9,29 @@
 body {
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
-    padding: 0.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+.header .logo img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.header .main-nav a {
+    color: #222;
+    text-decoration: none;
+    margin: 0 3rem;
 }
